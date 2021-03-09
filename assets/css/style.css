@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 340px;
 }
 
 @media (max-width: 1199px) {
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     left: -300px;
   }
   #main {
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 

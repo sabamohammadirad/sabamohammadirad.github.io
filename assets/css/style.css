@@ -215,6 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  background-position-x: right;
 }
 
 #hero:before {
@@ -574,7 +575,7 @@ section {
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -1071,4 +1072,16 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+
+/** ME */
+.font-light {
+  font-weight: 300;
+}
+
+.email-item {
+  margin-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

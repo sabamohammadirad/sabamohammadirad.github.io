@@ -25,7 +25,37 @@
 
   <link href="assets/css/style.css" rel="stylesheet">
 
-  </head>
+  <style>
+    /* Desktop View (Large Screens) - Keep text to the right of the sidebar */
+    @media (min-width: 1200px) {
+      #hero {
+        padding-left: 350px !important;
+        align-items: flex-start !important;
+        text-align: left;
+      }
+      #hero h1 {
+        font-size: 3rem; /* Adjusted font size for desktop */
+      }
+    }
+
+    /* Mobile View (Small Screens) - Center text and remove padding */
+    @media (max-width: 1199px) {
+      #hero {
+        padding-left: 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center;
+      }
+      #hero h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+      }
+      #hero p {
+        justify-content: center;
+      }
+    }
+  </style>
+
+</head>
 
 <body>
 
@@ -61,9 +91,9 @@
       </nav></div>
   </header>
   
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-start" style="padding-left: 350px;">
+  <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1 style="font-size: 3rem;">Saba Rad <br />M.Eng., B.Sc., LEED® GA</h1>
+      <h1>Saba Rad <br />M.Eng., B.Sc., LEED® GA</h1>
       <p>I'm <span class="typed"
           data-typed-items="Project Coordinator, Architect, Interior Designer, 3D Visualizer, Photographer"></span></p>
     </div>
@@ -74,7 +104,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About</h2>
+          <h2>Highlight of Qualification</h2>
           <p>
             • Project Coordinator with 2+ years of experience supporting roofing and cladding projects valued up to $9M, with hands-on responsibility in change management, cost tracking, and project controls.<br>
             • Recognized for leveraging Procore, Power BI, and Excel to improve documentation traceability, schedule visibility, and decision-making.<br>
@@ -87,6 +117,7 @@
             <img src="assets/img/resume-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>About</h3>
             <p class="font-italic">
               I’m Saba Rad, a Construction Project Coordinator with a background in architectural and civil engineering. I specialize in project management, workflow optimization, and process automation, connecting field execution with strategic oversight to deliver projects efficiently and successfully. I hold a Bachelor’s degree in Architectural Engineering.
             </p>
@@ -184,7 +215,7 @@
             
             <div class="resume-item">
               <h4>M.ENG. IN CIVIL ENGINEERING</h4>
-              <h5>September 2022 - April 2024</h5>
+              <h5>Sep. 2022 - Apr. 2024</h5>
               <p><em>University of Ottawa, Ottawa, Ontario, Canada</em></p>
               <p>
                 • Master Final Project: Energy-Efficient Renovations and Automated Energy Audit Inspections<br>
@@ -195,7 +226,7 @@
 
             <div class="resume-item">
               <h4>B.SC. in Architectural Engineering</h4>
-              <h5>September 2013 - 2017</h5>
+              <h5>Sep. 2013 - 2017</h5>
               <p><em>Soore University, Tehran, Iran</em></p>
               <p>
                 • Bachelor Final Project: Sustainable Design and Analysis of a Music and Dance Academy<br>
@@ -216,6 +247,7 @@
             <h3 class="resume-title">Languages & Test Scores</h3>
             <div class="resume-item">
               <ul>
+                <li>English: Fluent</li>
                 <li><strong>CELPIP Test (Band Score: 10)</strong> <p class="font-light"> Listening: 11 Reading: 8 Speaking: 11 Writing: 10 <br> <i>(14 January 2025)</i></p></li>
                 <li><strong>IELTS Test (Band Score: 7.0)</strong> <p class="font-light">Listening: 8.0 Reading: 7.0 Speaking: 7.0 Writing: 6.5 <br> <i>(16 November 2019)</i></p></li>
                 <li><strong>Persian:</strong> Native</li>
@@ -366,6 +398,17 @@
                 <a href="assets/img/portfolio/SustainableMusicAndDanceAcademy/Sustainable Music and Dance Academy 1.jpg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
                 <a href="music-and-dance-academy-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-academic">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/GreenElementarySchool/th_Green Elementary School 1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/GreenElementarySchool/Green Elementary School 1.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="green-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -637,4 +680,3 @@
 </body>
 
 </html>
-

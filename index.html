@@ -38,19 +38,27 @@
       }
     }
 
-    /* Mobile View (Small Screens) - Center text and remove padding */
+    /* Mobile View (Small Screens) - Left align text with padding */
     @media (max-width: 1199px) {
       #hero {
-        padding-left: 0 !important;
-        align-items: center !important;
+        /* Add padding so it doesn't touch the left edge */
+        padding-left: 30px !important; 
+        
+        /* Align flex items to start (left) instead of center */
+        align-items: flex-start !important; 
+        
+        /* Keep vertical centering */
         justify-content: center !important;
-        text-align: center;
+        
+        /* Force text alignment to left */
+        text-align: left !important; 
       }
       #hero h1 {
         font-size: 2rem; /* Smaller font size for mobile */
       }
       #hero p {
-        justify-content: center;
+        /* Ensure the paragraph/typed text aligns left */
+        justify-content: flex-start;
       }
     }
   </style>

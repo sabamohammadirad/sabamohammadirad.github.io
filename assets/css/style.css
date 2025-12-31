@@ -1089,6 +1089,6 @@ section {
 /* Adjust Hero Image position on Mobile to center the subject */
 @media (max-width: 768px) {
   #hero {
-    background-position: 90% center !important;
+    background-position: 95% center !important;
   }
 }

@@ -1086,9 +1086,9 @@ section {
   padding-bottom: 5px;
 }
 
-/* Centering Hero Image on Mobile */
+/* Adjust Hero Image position on Mobile to center the subject */
 @media (max-width: 768px) {
   #hero {
-    background-position: center center !important;
+    background-position: 75% center !important;
   }
 }
